@@ -1,44 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy – Fitarr</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitarr - Self-Hosted Fitness Tracker</title>
   <style>
     body {
-      font-family: sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 20px;
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
       line-height: 1.6;
     }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
+    h1, h2 {
+      color: #333366;
     }
-    h2 {
-      margin-top: 1.5em;
+    code {
+      background: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 2rem 0;
     }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy for Fitarr</h1>
-  <p><strong>Effective Date:</strong> [Insert Date]</p>
+  <h1>Fitarr</h1>
+  <p><strong>Fitarr</strong> is a self-hosted, open source fitness tracking application designed for individuals, families, and small groups who want full control over their health and performance data.</p>
 
-  <p>Fitarr is an open-source fitness tracking application created to empower individuals to manage their own health and wellness data independently. This project is maintained by contributors and is distributed freely under an open-source license.</p>
+  <hr/>
 
-  <h2>1. No Data Collection</h2>
-  <p>Fitarr does not collect, store, or transmit any personal data to our servers. All data entered into the app remains on the user’s device or server.</p>
+  <h2>🎯 Project Goal</h2>
+  <p>To create a privacy-focused platform where users can track their fitness, nutrition, and biometric data — either independently or in a coach-client structure — <strong>without relying on third-party cloud services</strong>.</p>
 
-  <h2>2. User-Controlled Integrations</h2>
-  <p>If you choose to connect third-party services (e.g., Garmin, Apple Health, Fitbit), all data fetched via these integrations is handled locally and privately on your own system. We do not access or share any integration data.</p>
+  <hr/>
 
-  <h2>3. No Tracking or Analytics</h2>
-  <p>This application contains no embedded analytics, tracking pixels, or telemetry. We do not monitor usage, user behavior, or system performance.</p>
+  <h2>✅ Key Features (In Development)</h2>
+  <ul>
+    <li>📊 <strong>Fitness tracking</strong> (workouts, weight, body metrics, calories in/out)</li>
+    <li>🧑‍🤝‍🧑 <strong>Coach/client functionality</strong> for families or trainers</li>
+    <li>🔗 <strong>Third-party integrations</strong> via secure user authorization:
+      <ul>
+        <li>MyFitnessPal</li>
+        <li>Cronometer</li>
+        <li>Macronutrient apps</li>
+        <li>Apple Health</li>
+        <li>Fitbit</li>
+        <li>Garmin</li>
+      </ul>
+    </li>
+    <li>📱 <strong>Mobile app integration</strong> to let users manage syncs and permissions</li>
+    <li>🛠️ <strong>Full API access</strong> for extensibility</li>
+  </ul>
 
-  <h2>4. Your Responsibility</h2>
-  <p>Because Fitarr is self-hosted, the responsibility for data security, storage, and backups lies with the user or the entity hosting the application.</p>
+  <hr/>
 
-  <h2>5. Open Source Nature</h2>
-  <p>This application is provided as-is, without warranty. Developers and maintainers take no responsibility for how the software is used or hosted. Review the code and configure integrations responsibly.</p>
+  <h2>🔐 Data Ownership</h2>
+  <p>All data is stored <strong>locally</strong> or on your chosen self-hosted environment. Fitarr does not collect or transmit any user data. Integrations are fully user-authorized and controlled.</p>
+
+  <hr/>
+
+  <h2>🚧 Status</h2>
+  <blockquote>
+    The project is in active early development. Contributions and collaboration are welcome.
+  </blockquote>
+
+  <hr/>
+
+  <h2>📦 Tech Stack</h2>
+  <ul>
+    <li>Backend: Laravel (PHP)</li>
+    <li>Frontend: In progress</li>
+    <li>Database: MySQL (preferred), SQLite (optional)</li>
+    <li>Containerized with Docker for easy deployment</li>
+  </ul>
+
+  <hr/>
+
+  <h2>🛠 Getting Started</h2>
+  <ol>
+    <li>Clone the repo</li>
+    <li>Set up Docker (<code>./vendor/bin/sail up -d</code>)</li>
+    <li>Configure your <code>.env</code> file for database and integrations</li>
+    <li>Run migrations and seeders</li>
+    <li>Start building or customizing</li>
+  </ol>
+
+  <hr/>
+
+  <h2>📄 License</h2>
+  <p>MIT License – free to use, modify, and distribute.  
+  See <code>LICENSE</code> file for details.</p>
+
+  <hr/>
+
+  <h2>🧾 Privacy Policy</h2>
+  <p>We do not collect, monitor, or transmit user data.  
+  See <a href="https://kaikul.github.io/fitarr/privacy.html">/docs/privacy.html</a></p>
+
+  <hr/>
+
+  <p>Want to contribute? Submit a PR or open an issue.  
+  Let’s build privacy-first fitness tools together.</p>
 </body>
 </html>
